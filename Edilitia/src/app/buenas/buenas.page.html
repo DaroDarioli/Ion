@@ -1,0 +1,13 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title class="tituloHeader">
+        Buenas
+        <ion-icon class="ionIcon" src="./assets/sign-out-alt-solid.svg" (click)="salir()"></ion-icon>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-content>
+    <ion-spinner name="lines" *ngIf="mostrar" class="unSpinner"></ion-spinner>
+    <button class="bntFoto par" (click)="sacarFoto()">Tomar Foto</button>
+</ion-content>

@@ -1,0 +1,330 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+/** Ionic CSS Variables **/
+:root {
+  /** primary **/
+  --ion-color-primary: #3880ff;
+  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #3171e0;
+  --ion-color-primary-tint: #4c8dff;
+
+  /** secondary **/
+  --ion-color-secondary: #0cd1e8;
+  --ion-color-secondary-rgb: 12, 209, 232;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #0bb8cc;
+  --ion-color-secondary-tint: #24d6ea;
+
+  /** tertiary **/
+  --ion-color-tertiary: #7044ff;
+  --ion-color-tertiary-rgb: 112, 68, 255;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #633ce0;
+  --ion-color-tertiary-tint: #7e57ff;
+
+  /** success **/
+  --ion-color-success: #10dc60;
+  --ion-color-success-rgb: 16, 220, 96;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #0ec254;
+  --ion-color-success-tint: #28e070;
+
+  /** warning **/
+  --ion-color-warning: #ffce00;
+  --ion-color-warning-rgb: 255, 206, 0;
+  --ion-color-warning-contrast: #ffffff;
+  --ion-color-warning-contrast-rgb: 255, 255, 255;
+  --ion-color-warning-shade: #e0b500;
+  --ion-color-warning-tint: #ffd31a;
+
+  /** danger **/
+  --ion-color-danger: #f04141;
+  --ion-color-danger-rgb: 245, 61, 61;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #d33939;
+  --ion-color-danger-tint: #f25454;
+
+  /** dark **/
+  --ion-color-dark: #222428;
+  --ion-color-dark-rgb: 34, 34, 34;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #1e2023;
+  --ion-color-dark-tint: #383a3e;
+
+  /** medium **/
+  --ion-color-medium: #989aa2;
+  --ion-color-medium-rgb: 152, 154, 162;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #86888f;
+  --ion-color-medium-tint: #a2a4ab;
+
+  /** light **/
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244, 244, 244;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+
+  --ion-toolbar-background: rgba(50, 2, 59, 0.8);
+  
+}
+
+
+ion-content {
+  --background:none;
+  background:url('../assets/dominik.jpg');
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Exo', sans-serif;
+}
+
+// .divImg{
+//  max-height: 20% !;
+// }
+
+
+.btnOpciones{
+  height: 15%;
+  // padding: 5% 0% 0% 0%;
+  // border: solid 1px;
+
+}
+
+.btnOpcion {
+  height: 80%;
+  width: 80%;
+  outline: none;
+  border: 2px solid  #5A4692;
+  cursor: pointer;
+  display: block;
+  font-size: 20px;
+  font-family: 'Exo', sans-serif;
+  color:white;
+  letter-spacing: 2px;
+  // padding: 50px 90px;
+  margin: 0 auto;
+  box-shadow: 0 10px #053b53;
+  border-radius: 20px;
+}
+
+.btnOpcion.buena{
+  background: #07f026;
+}
+
+.btnOpcion.mala{
+  background: #062568;
+  color:white;
+}
+
+.ayuda{
+  color:white;
+}
+
+
+.divOpcion{
+  height: 16%;
+  padding: 2% 0% 0% 0%;
+}
+
+.tituloHeader{
+  color:white;
+  margin: 0% 0% 0% 20%;
+}
+
+.tituloHeaderIngreso{
+  color:white;
+  
+}
+
+.ionIcon{
+  margin: 2% 0% 0% 30%;
+}
+
+.headerLargo{
+  color:white;
+  margin: 0% 0% 0% 5%;
+}
+
+.iconHeaderLargo{
+  margin: 2% 0% 0% 10%;
+  
+  // padding: 25% 0% 0% 0%;
+}
+
+.errorLogueo{
+  font-size: 40px;
+  color:rgba(0, 0, 255, 0.931);
+  font-family: 'Exo', sans-serif;
+  text-align: center;
+  text-emphasis: bold;  
+  border-radius: 10%;
+  background:white; 
+  height: 30%;
+  padding: 5%;
+}
+
+.bntIngreso {
+  height: 100%;
+  width: 80%;
+  outline: none;
+  border: 2px solid  #5A4692;
+  cursor: pointer;
+  display: block;
+  // background: #5A4692;  
+  font-size: 26px;
+  font-family: 'Exo', sans-serif;
+  color:white;
+  letter-spacing: 2px;
+  margin: 0 auto;
+
+  border-radius: 20px;
+}
+
+.par{  
+  background: rgba(4, 29, 252, 0.6);  
+  box-shadow: 0 6px rgba(4, 29, 252, 0.8);  
+}
+
+.inpar{
+  background: rgba(50, 2, 59, 0.6);
+  box-shadow: 0 6px rgba(50, 2, 59, 0.8);
+}
+
+.bntIngreso:active {
+    box-shadow: 0 0 #053b53;
+    top: 6px;
+}
+
+.headerGeneral{
+  background-color: #383a3e;
+}
+
+
+.divInput{
+  font-size: 1.5em !important;
+  font-family: 'Exo', sans-serif;
+}
+
+
+.divInputError{
+  font-size: 1.0em !important;
+  font-family: 'Exo', sans-serif;
+  color:red;
+}
+
+.unSpinner{
+  width: 100%;
+  height: 100%;
+  color: rgba(4, 29, 252, 0.6); 
+  // stroke: #444;
+  // fill: #222;
+  // background-color: rgba(131, 130, 133,.3) 
+}
+
+
+
+.divIngreso{
+  height: 24%;
+  font-size: 27px;
+  padding: 7% 0% 0% 0%;
+}
+
+.divTest{
+  height: 19%;
+  font-size: 27px;
+  padding: 6% 0% 0% 0%;
+}
+
+.btnTest{
+  height: 90%;
+  width: 80%;
+  border: 2px solid  #5A4692;
+  border-radius: 20px;
+  font-size: 27px;
+  font-family: 'Exo', sans-serif;
+  letter-spacing: 2px;
+  outline: none;
+  
+  display: block;
+  position: relative;
+  
+  color:white;
+  // padding: 40px 100px;
+  margin: 0 auto;
+  }
+
+
+  .bntFoto {
+
+    height: 40%;
+    width: 80%;
+    margin: 30% 10% 30% 10%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;        
+    font-size: 26px;
+    font-family: 'Exo', sans-serif;
+    color:black;
+    letter-spacing: 2px;        
+    border-radius: 20px;
+  }
+  
+  
+  .bntFoto:active {
+      box-shadow: 0 0 #053b53;
+      top: 6px;
+  }
+  
+
+@media (orientation:landscape){
+
+
+  
+.divIngreso{
+  height: 18%;
+  font-size: 17px;
+  padding: 2% 0% 0% 0%;
+}
+  
+.bntIngreso {
+  height: 80%;
+  width: 80%;
+  font-size: 20px;  
+}
+ 
+.divTest{
+  height: 18%;
+  font-size: 20px;
+  padding: 1% 0% 0% 0%;
+}
+  
+.btnTest{
+  height: 65%;
+  width: 80%;  
+  border-radius: 20px;
+  font-size: 20px; 
+  
+  
+}
+
+.bntFoto {
+
+  height: 40%;
+  width: 60%;
+  margin: 15% 20% 15% 20%;  
+  box-shadow: 0 15px #053b53;
+  
+}
+
+  }

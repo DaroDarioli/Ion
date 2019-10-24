@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="tituloHeader">
+      Registro
+      <ion-icon class="ionIcon" src="./assets/sign-out-alt-solid.svg" (click)="salir()"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="formgroup">
+    <ion-list>
+      <ion-item>
+        <ion-label class="divInput" floating>Usuario</ion-label>
+        <ion-input class="divInput" type="text" formControlName="usr" [(ngModel)]="user.user"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="usr.hasError('required') && usr.touched">
+        <p class="divInputError">Debe ingresar un usuario</p>
+      </ion-item>
+      <ion-item *ngIf="usr.hasError('minlength') && usr.touched">
+        <p class="divInputError">El usuario debe tener por lo menos 6 caractéres</p>
+      </ion-item>
+      <ion-item>
+        <ion-label class="divInput">Correo</ion-label>
+        <ion-input class="divInput" type="text" formControlName="email" [(ngModel)]="user.correo"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="email.hasError('required') && email.touched">
+        <p class="divInputError">Debe ingresar un correo electrónico</p>
+      </ion-item>
+      <ion-item *ngIf="email.hasError('email') && email.touched">
+        <p class="divInputError">Formato de correo inválido</p>
+      </ion-item>
+      <ion-item *ngIf="email.hasError('minlength') && email.touched">
+        <p class="divInputError">El corrreo debe tener por lo menos 6 caractéres</p>
+      </ion-item>
+      <ion-item>
+        <ion-label class="divInput">Contraseña</ion-label>
+        <ion-input class="divInput" type="password" formControlName="password" [(ngModel)]="user.clave"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="password.hasError('required') && password.touched">
+        <p class="divInputError">Debe ingresar una contraseña!!</p>
+      </ion-item>
+
+
+      <ion-item *ngIf="password.hasError('minlength') && password.touched">
+        <p class="divInputError">La contraseña debe tener por lo menos 6 caractéres</p>
+      </ion-item>
+    </ion-list>
+  </form>
+
+  <div class="divIngreso">
+    <button class="bntIngreso par" (click)="registrarse(user)">Registrarse</button>
+  </div>
+</ion-content>

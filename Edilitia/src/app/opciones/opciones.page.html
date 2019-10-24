@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="tituloHeader">Opciones
+    <ion-icon class="ionIcon" src="./assets/sign-out-alt-solid.svg" (click)="salir()"></ion-icon>
+  </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="divOpcion">
+    <button class="btnOpcion par" expand="block" (click)="clickBuenas()">Reportar logro</button>
+  </div>
+
+  <div class="divOpcion">
+    <button class="btnOpcion par" expand="block" (click)="galeriaBuenas()">Galería logros</button>
+  </div>
+
+  <div class="divOpcion">
+    <button class="btnOpcion par" expand="block" (click)="galeriaMisBuenas()">Mis Reportes de logros</button>
+  </div>
+
+  <div class="divOpcion">
+    <button class="btnOpcion inpar" expand="block" (click)="clickMalas()">Reportar a mejorar</button>
+  </div>
+
+  <div class="divOpcion">
+    <button class="btnOpcion inpar" expand="block" (click)="galeriaMalas()">Galería a mejorar</button>
+  </div>
+
+  <div class="divOpcion">
+    <button class="btnOpcion inpar" expand="block" (click)="galeriaMisMalas()">Mis reportes a mejorar</button>
+  </div>
+
+</ion-content>

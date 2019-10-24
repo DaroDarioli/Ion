@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="tituloHeader">
+      Destacadas
+      <ion-icon class="ionIcon" src="./assets/sign-out-alt-solid.svg" (click)="salir()"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-spinner name="lines" *ngIf="mostrar" class="unSpinner"></ion-spinner>
+
+  <div *ngIf="mostrar == false">
+
+    <ion-img class="divImg" [src]="imagenActual.referencia"></ion-img>
+    
+    <div class="imgLabel">Reportada por: {{imagenActual.usuario}} </div>
+    <div class="imgLabel">
+      "Me gustas:" {{imagenActual.likes}}
+      <ion-icon *ngIf="puedeDarleLike(imagenActual)" class="iconHeaderLargo" src="./assets/like-hand-sign.svg"
+        (click)="like(imagenActual)"></ion-icon>
+      <label *ngIf="puedeDarleLike(imagenActual) == false">
+        Te gusta!!
+      </label>
+      
+    </div>
+  </div>
+ 
+
+<!-- comienzo original -->
+
+  <!-- <div *ngFor="let imagen of imagenes">
+    <ion-img class="divImg" [src]="imagen.referencia"></ion-img>
+    <div class="imgLabel">Reportada por: {{imagen.usuario}} </div>
+    <div class="imgLabel">
+      "Me gustas:" {{imagen.likes}}
+      <ion-icon *ngIf="puedeDarleLike(imagen)" class="iconHeaderLargo" src="./assets/like-hand-sign.svg"
+        (click)="like(imagen)"></ion-icon>
+      <label *ngIf="puedeDarleLike(imagen) == false">
+        Te gusta!!
+      </label>
+    </div>
+  </div> -->
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>galeria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+      <div *ngFor="let imagen of imagenes">
+        <ion-item class="divImg">
+          <ion-img [src]="imagen.referencia"></ion-img>
+        </ion-item>
+        <ion-item class="imgLabel">
+          <ion-label> Reportada por: {{imagen.usuario}} </ion-label>
+        </ion-item>
+      </div>
+      
+</ion-content>

@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title class="tituloHeaderIngreso">
+      Ingreso</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-spinner name="lines" *ngIf="mostrar" class="unSpinner"></ion-spinner>
+  <form [formGroup]="formgroup">
+    <ion-list>
+
+      <ion-item >
+        <ion-label class="divInput">Correo</ion-label>
+        <ion-input class="divInput" type="text" formControlName="email" [(ngModel)]="user.correo"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="email.hasError('required') && email.touched">
+        <p class="divInputError">Debe ingresar su correo electrónico</p>
+      </ion-item>
+
+      <ion-item *ngIf="email.hasError('email') && email.touched">
+        <p class="divInputError">Formato de correo inválido</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label class="divInput">Contraseña</ion-label>
+        <ion-input class="divInput" type="password" formControlName="password" [(ngModel)]="user.clave"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="password.hasError('required') && password.touched">
+        <p class="divInputError">Debe ingresar su contraseña</p>
+      </ion-item>
+
+    </ion-list>
+
+  </form>
+
+
+
+  
+  <div class="divIngreso">
+    <button class="bntIngreso par" expand="block" (click)="Ingresar(user)">Ingresar</button>
+  </div>
+  <div class="divIngreso">
+    <button class="bntIngreso inpar" expand="block" (click)="Registrarse()">Registrarse</button>
+  </div>
+  <div class="divIngreso">
+    <button class="bntIngreso par" expand="block" (click)="Testeo()">Realizar Prueba</button>
+  </div>
+
+</ion-content>

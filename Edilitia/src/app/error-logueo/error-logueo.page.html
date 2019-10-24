@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="headerLargo">
+      Error Logueo
+      <ion-icon class="iconHeaderLargo" src="./assets/sign-out-alt-solid.svg" (click)="salir()"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-content padding>
+      <ion-spinner name="lines" *ngIf="mostrar" class="unSpinner"></ion-spinner>
+    <div class="errorLogueo">
+      Los datos ingresados son incorrectos!!
+    </div>
+    <div class="divIngreso">
+      <button class="btnOpcion par" (click)="volverALogueo()">Volver a Ingreso</button>
+    </div>
+    <div class="divIngreso">
+      <button class="btnOpcion inpar" (click)="registrarse()">Registrarse</button>
+    </div>
+  </ion-content>

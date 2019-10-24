@@ -1,0 +1,12 @@
+#Posible funcionamiento del like
+
+-hacer click y guardar en la base, la referencia a la foto, un like, y el nombre del usuario
+
+-Recuperar todos los likes correspondientes a esa foto
+
+-validar los usuarios que le dieron like
+
+-bloquear dar más likes si ya existe
+
+
+#Lunes

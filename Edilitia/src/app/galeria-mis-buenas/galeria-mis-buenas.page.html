@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="headerLargo">
+      Mis Destacadas
+      <ion-icon class="iconHeaderLargo" src="./assets/sign-out-alt-solid.svg" (click)="salir()"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-spinner name="lines" *ngIf="mostrar" class="unSpinner"></ion-spinner>
+  <div *ngFor="let imagen of imagenes">
+    <ion-img class="divImg" [src]="imagen.referencia"></ion-img>
+    <div class="imgLabel">Reportada por: {{imagen.usuario}} </div>
+  </div>
+</ion-content>

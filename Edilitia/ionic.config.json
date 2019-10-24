@@ -1,0 +1,7 @@
+{
+  "name": "Edilitia",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
